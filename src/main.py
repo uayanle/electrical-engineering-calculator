@@ -3,6 +3,7 @@ from calculators.three_phase import show_three_phase_calculator
 from calculators.voltage_drop import show_voltage_drop_calculator
 from calculators.transformer import show_transformer_calculator
 from calculators.power_factor import show_power_factor_calculator
+from calculators.motor import show_motor_current_calculator
 import math
 
 
@@ -187,6 +188,7 @@ motor_current_button = tk.Button(
     menu_frame,
     text='Motor Current Calculator',
     width=20,
+    command=lambda: show_motor_current_calculator(content_frame)
 )
 
 motor_current_button.pack(pady=5)

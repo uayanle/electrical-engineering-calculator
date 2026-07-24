@@ -20,7 +20,7 @@ def show_power_factor_calculator(content_frame):
     # create a label and entry for real power
     real_power_label = tk.Label(
         content_frame,
-        text='Real power (W):',
+        text='Real power (KW):',
         font=('Arial', 12)
     )
 
@@ -38,7 +38,7 @@ def show_power_factor_calculator(content_frame):
 
     apparent_power_label = tk.Label(
         content_frame,
-        text='Apparent Power (W):',
+        text='Apparent Power (kVA):',
         font=('Arial', 12)
     )
 
@@ -58,8 +58,8 @@ def show_power_factor_calculator(content_frame):
         try:
             real_power = float(real_power_entry.get())
             apparent_power = float(apparent_power_entry.get())
-            power_factor = real_power // apparent_power
-            result_label.config(text=f'Power factor: {power_factor:.2f} W')
+            power_factor = real_power / apparent_power
+            result_label.config(text=f'Power factor: {power_factor:.2f} ')
         except ValueError:
             result_label.config(
                 text='Invalid input. Please enter valid numbers.')
@@ -68,7 +68,7 @@ def show_power_factor_calculator(content_frame):
 
     result_label = tk.Label(
         content_frame,
-        text='Power Factor (0.00W)',
+        text='Power Factor (0.0)',
         font=('Arial, 12'),
         fg='blue',
     )
