@@ -9,6 +9,7 @@ A desktop application built with Python and Tkinter containing useful electrical
 - Voltage Drop Calculator
 - Transformer Voltage Calculator
 - Power Factor Calculator
+- Motor current Calculator
 
 ## Technologies
 
