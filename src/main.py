@@ -4,6 +4,7 @@ from calculators.voltage_drop import show_voltage_drop_calculator
 from calculators.transformer import show_transformer_calculator
 from calculators.power_factor import show_power_factor_calculator
 from calculators.motor import show_motor_current_calculator
+from calculators.cable import show_cable__sizing_calculator
 import math
 
 
@@ -197,7 +198,8 @@ motor_current_button.pack(pady=5)
 cable_sizing_button = tk.Button(
     menu_frame,
     text='Cable sizing Calculator',
-    width=20
+    width=20,
+    command=lambda: show_cable__sizing_calculator(content_frame)
 )
 cable_sizing_button.pack(pady=5)
 
