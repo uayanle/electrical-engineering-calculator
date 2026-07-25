@@ -5,6 +5,7 @@ from calculators.transformer import show_transformer_calculator
 from calculators.power_factor import show_power_factor_calculator
 from calculators.motor import show_motor_current_calculator
 from calculators.cable import show_cable__sizing_calculator
+from calculators.short_circuit import show_short_circuit_calculator
 import math
 
 
@@ -207,7 +208,8 @@ cable_sizing_button.pack(pady=5)
 short_circuit_button = tk.Button(
     menu_frame,
     text='Short Circuit Calculator',
-    width=20
+    width=20,
+    command=lambda: show_short_circuit_calculator(content_frame),
 )
 
 short_circuit_button.pack(pady=5)
