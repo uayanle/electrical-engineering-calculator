@@ -1,13 +1,13 @@
 
-# ⚡ Electrical Engineering Calculator
+## Electrical Engineering Calculator
 
 Python • Tkinter • Electrical Engineering
 
-A desktop application built with Python and Tkinter that provides a collection of electrical engineering calculators commonly used by students and engineers.
+Hi, this is a desktop application built using Python and Tkinter. This project provides a collection of electrical engineering calculators commonly used by students and engineers.
 
-This project was developed to strengthen my Python programming skills while applying core electrical engineering principles learned during my degree.
+This was developed to help strengthen my Python programming skills while applying core electrical engineering principles learned during my degree.
 
-## Features
+## Calculator Features
 
 - Three Phase Power Calculator
 - Voltage Drop Calculator
@@ -17,7 +17,7 @@ This project was developed to strengthen my Python programming skills while appl
 - Cable Size Recommendation
 - Short Circuit Current Calculator
 
-## Technologies Used
+## Technologies I Have Used
 
 - Python 3
 - Tkinter
@@ -53,7 +53,7 @@ I = V / Z
 
 attached in folder
 
-## Project Structure
+## Project Structure (Roughly)
 
 src/
 │
@@ -67,7 +67,7 @@ src/
 │ ├── cable.py
 │ └── short_circuit.py
 
-## Future Improvements
+## Personal Future Improvements Of Mine To Be Done
 
 - Improved GUI styling
 - Dark mode
